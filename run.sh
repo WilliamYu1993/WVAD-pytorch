@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+    --exp_dir VAD \
+    --exp_name FCN_VAD \
+    --data_dir /mnt/2TB/user_chengyu/Corpus/noisy-vctk-16k \
+    --num_workers 3  \
+    --cuda \
+    --log_interval 100 \
+    --batch_size 1 \
+    --learning_rate 0.001 \
+    --num_epochs 100 \
+    --clip_grad_norm_val 10.0 \
+    --grad_accumulate_batches 1 \
+    --log_grad_norm \
+    --lr_decay 0.5 
